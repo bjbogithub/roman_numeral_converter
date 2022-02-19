@@ -1,6 +1,6 @@
 function convertToRoman() {
     var num = document.getElementById("input").value;
-    if (typeof num !== 'number') {
+    if (isNaN(num)) {
         var answer = "Try again and this time, input a valid number!"
         document.getElementById('output').innerHTML = answer;
     } else {
@@ -10,8 +10,8 @@ function convertToRoman() {
         i = 3;
         while (i--)
             roman_num = (key[+digits.pop() + (i * 10)] || "") + roman_num;
-            var answer2 = Array(+digits.join("") + 1).join("M") + roman_num;
-            document.getElementById('output').innerHTML = answer2;
+        var answer2 = Array(+digits.join("") + 1).join("M") + roman_num;
+        document.getElementById('output').innerHTML = "Roman number: " + answer2;
     }
 }
 
