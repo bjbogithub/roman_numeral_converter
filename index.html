@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Roman Numeral Converter</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Roman Numeral Converter (freeCodeCamp project for JavaScript)</h1>
+        <h3>Description</h3>
+        <p> <!-- Add an anchor/link to wikipedia in the description-->
+            Input a number into the input field and press submit. The JavaScript code that I have 
+             made will convert the number into a <strong><a href="https://en.wikipedia.org/wiki/Roman_numerals">roman numeral</a></strong>. 
+        </p>
+        <form>
+            <label for="Input">Input</label>
+            <input type="text" id="input"> 
+            <!-- Adding the submit putton that activate the palindrome javascript function when clicked -->
+            <input type="submit" value="Submit" onclick="convertToRoman(); return false;"/>
+        </form>
+        <p id="output"></p>
+        <!-- Here comes the external javascript import -->
+        <script src="roman_numeral_converter.js"></script>
+    </body>
+</html>
